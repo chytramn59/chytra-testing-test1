@@ -14,6 +14,10 @@ Then I should get singup form for new sign-in
 Scenario:sign-up
 Given I am on singup form
 When I enter all the details
-Then I should see signup succesfully
+Then I should see signup succesfullys
 
-
+@signout
+Scenario:sign-out
+Given I am on home page
+When I click on signout button
+Then I should see signouted succesfully
