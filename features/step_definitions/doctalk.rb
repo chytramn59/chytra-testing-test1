@@ -22,7 +22,7 @@ end
 
 When("I enter all the details") do
   @browser.find_element(id: "user_name").send_keys "chytra"
-  @browser.find_element(id: "user_email").send_keys "chytramn85@gmail.com"
+  @browser.find_element(id: "user_email").send_keys "chytramn53@gmail.com"
   @browser.find_element(id: "user_password").send_keys "Chytra123!"
   @browser.find_element(id: "user_password_confirmation").send_keys "Chytra123!"
   sleep 3
