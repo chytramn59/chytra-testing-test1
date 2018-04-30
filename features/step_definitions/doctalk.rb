@@ -22,7 +22,7 @@ end
 
 When("I enter all the details") do
   @browser.find_element(id: "user_name").send_keys "chytra"
-  @browser.find_element(id: "user_email").send_keys "chytramn53@gmail.com"
+  @browser.find_element(id: "user_email").send_keys "chytramn67@gmail.com"
   @browser.find_element(id: "user_password").send_keys "Chytra123!"
   @browser.find_element(id: "user_password_confirmation").send_keys "Chytra123!"
   sleep 3
@@ -32,7 +32,7 @@ end
 
 Then("I should see signup succesfully") do 
   sleep 5
-  if @browser.find_element(xpath: "//div[2]/ul/li[2]/form/input[2]").displayed?
+  if @browser.find_element(xpath: "//div[2]/ul/li[2]/form/input[2]").click  
     puts "sucessfully logged out"
   end
 end
