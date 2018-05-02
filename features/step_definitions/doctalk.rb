@@ -13,7 +13,7 @@ When("I enter all the vaild details") do
     puts "login popup displayed"
   end
    @browser.find_element(id: "user_name").send_keys "chytra"
-  @browser.find_element(id: "user_email").send_keys "chytramn65699@gmail.com"
+  @browser.find_element(id: "user_email").send_keys "chytramns43@gmail.com"
   @browser.find_element(id: "user_password").send_keys "Chytra123!"
   @browser.find_element(id: "user_password_confirmation").send_keys "Chytra123!"
   sleep 3
@@ -25,7 +25,7 @@ Then("I should see {string}") do |var|
   if var1==var 
   puts "#{var1}" 
   else 
-  raise.Expection.new "#{var1} not found" 
+  raise "#{var1} not found" 
   end
 end
 
@@ -44,6 +44,6 @@ Then("I should see message {string}") do |varr|
   if var1==varr 
   puts "#{var1}" 
   else 
-  raise.Expection.new "#{var1} not found" 
+  raise "#{var1} not found" 
   end
 end
